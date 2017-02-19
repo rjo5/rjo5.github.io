@@ -22,7 +22,7 @@
 
 <script type="text/javascript">
 
-    var resizeOwnEmulator = function(width, height)
+    var resizeOwnEmulator = function(320, 240)
     {
         var emulator = $('#emulator');
         emulator.css('width', width);
@@ -48,7 +48,7 @@
                 params.allowFullScreen = 'true';
                 params.allowFullScreenInteractive = 'true';
 
-                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '600', '440', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
             }
         }
 
