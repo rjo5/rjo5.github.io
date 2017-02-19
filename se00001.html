@@ -25,8 +25,8 @@
     var resizeOwnEmulator = function(width, height)
     {
         var emulator = $('#emulator');
-        emulator.css('320', 320);
-        emulator.css('240', 240);
+        emulator.css('width', width);
+        emulator.css('height', height);
     }
 
     $(function()
@@ -48,7 +48,7 @@
                 params.allowFullScreen = 'true';
                 params.allowFullScreenInteractive = 'true';
 
-                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '640', '480', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
+                swfobject.embedSWF('flash/Nesbox.swf', 'emulator', '320', '240', '11.2.0', 'flash/expressInstall.swf', flashvars, params, attributes);
             }
         }
 
